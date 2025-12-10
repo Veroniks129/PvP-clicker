@@ -1,25 +1,39 @@
 using UnityEngine;
+using Unity.Netcode;
 using TMPro;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ButtonClickCounter : NetworkBehaviour
 {
-    int count;
-    public TMP_Text visible_counter;
+    public NetworkVariable<int> count = new NetworkVariable<int>(0,
+        NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Server);
+    [SerializeField] private TMP_Text visible_counter;
 
-    void Start()
+    public override void OnNetworkSpawn()
     {
-        count = 0;
+        UpdateText(count.Value);
+
+        count.OnValueChanged += (oldValue, newValue) =>
+        {
+            UpdateText(newValue);
+        };
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnLocalButtonClick()
     {
-        
+        SendClickServerRpc();
     }
 
-    public void OnClick()
+    [ServerRpc(RequireOwnership = false)]
+    private void SendClickServerRpc(ServerRpcParams rpcParams = default)
     {
-        ++count;
-        visible_counter.text = count.ToString();
+        count.Value++;
+    }
+
+    private void UpdateText(int value)
+    {
+        if (visible_counter != null)
+        {
+            visible_counter.text = value.ToString();
+        }
     }
 }
