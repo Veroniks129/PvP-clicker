@@ -255,12 +255,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1075273794}
   - {fileID: 946573840}
   - {fileID: 1052218683}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &19159400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +309,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 549078384}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &19159402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,6 +1218,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 0}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!4 &132063414
 Transform:
   m_ObjectHideFlags: 0
@@ -1610,12 +1621,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 725747707}
   - {fileID: 482462771}
   - {fileID: 695824078}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &217510486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1661,6 +1675,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 307277113}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &217510488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2233,11 +2251,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 946573840}
   - {fileID: 674636485}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &264617172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2283,6 +2304,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1984980847}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &264617174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2991,11 +3016,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1331475520}
   - {fileID: 1358633924}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &339470783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3041,6 +3069,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1984190992}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &339470785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3417,11 +3449,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1075273794}
   - {fileID: 217510483}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &482462774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3467,6 +3502,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1359386877}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &482462776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4378,11 +4417,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 875571975}
   - {fileID: 1976250516}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &566040013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4428,6 +4470,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 490352669}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &566040015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4690,11 +4736,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1075273794}
   - {fileID: 1052218683}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &595642806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4740,6 +4789,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1308241188}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &595642808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5173,12 +5226,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1075273794}
   - {fileID: 1758093312}
   - {fileID: 264617169}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &674636488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5224,6 +5280,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 120895243}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &674636490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5437,11 +5497,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1758093312}
   - {fileID: 1942893172}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &678738256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5487,6 +5550,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 2022983937}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &678738258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5798,12 +5865,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1075273794}
   - {fileID: 1720622960}
   - {fileID: 217510483}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &695824081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5849,6 +5919,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1324386569}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &695824083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6383,11 +6457,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1758093312}
   - {fileID: 217510483}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &725747710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6433,6 +6510,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 2110032743}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &725747712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7391,12 +7472,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1720622960}
   - {fileID: 566040010}
   - {fileID: 1964471249}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &875571978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7442,6 +7526,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 710557838}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &875571980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8286,12 +8374,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 19159397}
   - {fileID: 264617169}
   - {fileID: 1119259803}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &946573843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8337,6 +8428,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 286214954}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &946573845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8909,13 +9004,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1331475520}
   - {fileID: 1976250516}
   - {fileID: 595642803}
   - {fileID: 19159397}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1052218686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8961,6 +9059,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 2048823317}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1052218688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9489,6 +9591,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1426357128}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1075273800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9530,14 +9636,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 695824078}
   - {fileID: 595642803}
   - {fileID: 19159397}
   - {fileID: 674636485}
   - {fileID: 482462771}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!1 &1113336699
 GameObject:
   m_ObjectHideFlags: 0
@@ -9723,12 +9832,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1942893172}
   - {fileID: 1358633924}
   - {fileID: 946573840}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1119259806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9774,6 +9886,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 741457231}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1119259808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9909,6 +10025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1127781336}
+  - component: {fileID: 1127781338}
   - component: {fileID: 1127781337}
   m_Layer: 0
   m_Name: PlayerDataHolder
@@ -9944,7 +10061,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c270f1dba692a4ba8e4d978471b322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  current_team: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  current_team:
+    m_InternalValue: neutral
+--- !u!114 &1127781338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127781335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 644357972
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &1133323346
 GameObject:
   m_ObjectHideFlags: 0
@@ -10701,11 +10845,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1650850047}
   - {fileID: 1358633924}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1220008570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10751,6 +10898,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1188941358}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1220008572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11671,12 +11822,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1052218683}
   - {fileID: 1650850047}
   - {fileID: 339470780}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1331475523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11722,6 +11876,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 927141351}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1331475525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11897,11 +12055,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1964471249}
   - {fileID: 1720622960}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1357937080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11947,6 +12108,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 322639365}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1357937082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12122,12 +12287,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1220008567}
   - {fileID: 339470780}
   - {fileID: 1119259803}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1358633927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12173,6 +12341,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 552487120}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1358633929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13720,6 +13892,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 0}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1527152518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14608,11 +14784,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1331475520}
   - {fileID: 1220008567}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1650850050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14658,6 +14837,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 935109844}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1650850052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15056,12 +15239,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 875571975}
   - {fileID: 695824078}
   - {fileID: 1357937077}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1720622963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15107,6 +15293,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1569243914}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1720622965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15369,13 +15559,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 678738253}
   - {fileID: 1942893172}
   - {fileID: 725747707}
   - {fileID: 674636485}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1758093315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15421,6 +15614,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 192476361}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1758093317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16466,6 +16663,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1916885010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916885013}
+  - component: {fileID: 1916885012}
+  - component: {fileID: 1916885011}
+  m_Layer: 0
+  m_Name: Nodedata
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1916885011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916885010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1962091532
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &1916885012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916885010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  neighbors: []
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
+--- !u!4 &1916885013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916885010}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1942893172
 GameObject:
   m_ObjectHideFlags: 0
@@ -16515,12 +16788,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1758093312}
   - {fileID: 678738253}
   - {fileID: 1119259803}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1942893175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16566,6 +16842,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1071023123}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1942893177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16877,11 +17157,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 1357937077}
   - {fileID: 875571975}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1964471252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16927,6 +17210,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 1789035647}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1964471254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17102,11 +17389,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555cba4b6329d2b43a68390300ee492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   neighbors:
   - {fileID: 566040010}
   - {fileID: 1052218683}
-  node_power: 0
-  owner: 
+  power:
+    m_InternalValue: 0
+  color:
+    m_InternalValue: neutral
 --- !u!114 &1976250519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17152,6 +17442,10 @@ MonoBehaviour:
   var_example:
     m_InternalValue: 0
   external_example: {fileID: 831093506}
+  playerdataObj: {fileID: 0}
+  playerdata: {fileID: 0}
+  nodedataObj: {fileID: 0}
+  nodedata: {fileID: 0}
 --- !u!114 &1976250521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18322,3 +18616,4 @@ SceneRoots:
   - {fileID: 2115781923}
   - {fileID: 1605280583}
   - {fileID: 1127781336}
+  - {fileID: 1916885013}

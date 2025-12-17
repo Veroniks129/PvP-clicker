@@ -1,6 +1,7 @@
-using UnityEngine;
-using Unity.Netcode;
+using System.Collections.Generic;
 using TMPro;
+using Unity.Netcode;
+using UnityEngine;
 
 public class ClickProcesser : NetworkBehaviour
 {
@@ -11,9 +12,16 @@ public class ClickProcesser : NetworkBehaviour
     // Example of external object, used in network code
     [SerializeField] private TMP_Text external_example;
 
+    public Object playerdataObj; // set in editor
+    public Playerdata playerdata; 
+    public Object nodedataObj; // set in editor
+    public Nodedata nodedata;
+
     // First entry into the network
     public override void OnNetworkSpawn()
     {
+        playerdata = GetComponent<Playerdata>();
+        nodedata = GetComponent<Nodedata>();
         // From the start getting info from the host
         LocalSync(var_example.Value);
 
@@ -44,7 +52,18 @@ public class ClickProcesser : NetworkBehaviour
     [Rpc(SendTo.Server, InvokePermission = RpcInvokePermission.Everyone)]
     private void HostClickHandlerRpc()
     {
-        // Doing here any logic (in this example just adding 1 to click counter)
-        var_example.Value++;
+        if (nodedata.power.Value == 0)
+        {
+            nodedata.color.Value = playerdata.current_team.Value;
+            var_example.Value++;
+        }
+        else if (nodedata.color.Value == playerdata.current_team.Value)
+        {
+            var_example.Value++;
+        }
+        else
+        {
+            var_example.Value--;
+        }
     }
 }
