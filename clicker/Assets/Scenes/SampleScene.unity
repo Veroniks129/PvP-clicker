@@ -259,6 +259,8 @@ MonoBehaviour:
   - {fileID: 1075273794}
   - {fileID: 946573840}
   - {fileID: 1052218683}
+  node_power: 0
+  owner: 
 --- !u!114 &19159400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1612,6 +1614,8 @@ MonoBehaviour:
   - {fileID: 725747707}
   - {fileID: 482462771}
   - {fileID: 695824078}
+  node_power: 0
+  owner: 
 --- !u!114 &217510486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2232,6 +2236,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 946573840}
   - {fileID: 674636485}
+  node_power: 0
+  owner: 
 --- !u!114 &264617172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2988,6 +2994,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1331475520}
   - {fileID: 1358633924}
+  node_power: 0
+  owner: 
 --- !u!114 &339470783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3412,6 +3420,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1075273794}
   - {fileID: 217510483}
+  node_power: 0
+  owner: 
 --- !u!114 &482462774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4371,6 +4381,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 875571975}
   - {fileID: 1976250516}
+  node_power: 0
+  owner: 
 --- !u!114 &566040013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4681,6 +4693,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1075273794}
   - {fileID: 1052218683}
+  node_power: 0
+  owner: 
 --- !u!114 &595642806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5163,6 +5177,8 @@ MonoBehaviour:
   - {fileID: 1075273794}
   - {fileID: 1758093312}
   - {fileID: 264617169}
+  node_power: 0
+  owner: 
 --- !u!114 &674636488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5424,6 +5440,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1758093312}
   - {fileID: 1942893172}
+  node_power: 0
+  owner: 
 --- !u!114 &678738256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5784,6 +5802,8 @@ MonoBehaviour:
   - {fileID: 1075273794}
   - {fileID: 1720622960}
   - {fileID: 217510483}
+  node_power: 0
+  owner: 
 --- !u!114 &695824081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6366,6 +6386,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1758093312}
   - {fileID: 217510483}
+  node_power: 0
+  owner: 
 --- !u!114 &725747710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7373,6 +7395,8 @@ MonoBehaviour:
   - {fileID: 1720622960}
   - {fileID: 566040010}
   - {fileID: 1964471249}
+  node_power: 0
+  owner: 
 --- !u!114 &875571978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8266,6 +8290,8 @@ MonoBehaviour:
   - {fileID: 19159397}
   - {fileID: 264617169}
   - {fileID: 1119259803}
+  node_power: 0
+  owner: 
 --- !u!114 &946573843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8888,6 +8914,8 @@ MonoBehaviour:
   - {fileID: 1976250516}
   - {fileID: 595642803}
   - {fileID: 19159397}
+  node_power: 0
+  owner: 
 --- !u!114 &1052218686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9508,6 +9536,8 @@ MonoBehaviour:
   - {fileID: 19159397}
   - {fileID: 674636485}
   - {fileID: 482462771}
+  node_power: 0
+  owner: 
 --- !u!1 &1113336699
 GameObject:
   m_ObjectHideFlags: 0
@@ -9697,6 +9727,8 @@ MonoBehaviour:
   - {fileID: 1942893172}
   - {fileID: 1358633924}
   - {fileID: 946573840}
+  node_power: 0
+  owner: 
 --- !u!114 &1119259806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9868,6 +9900,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1127781335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127781336}
+  - component: {fileID: 1127781337}
+  m_Layer: 0
+  m_Name: PlayerDataHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1127781336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127781335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.4635, y: 7.656549, z: -5.0211086}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1127781337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127781335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c270f1dba692a4ba8e4d978471b322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current_team: 
 --- !u!1 &1133323346
 GameObject:
   m_ObjectHideFlags: 0
@@ -10627,6 +10704,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1650850047}
   - {fileID: 1358633924}
+  node_power: 0
+  owner: 
 --- !u!114 &1220008570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11596,6 +11675,8 @@ MonoBehaviour:
   - {fileID: 1052218683}
   - {fileID: 1650850047}
   - {fileID: 339470780}
+  node_power: 0
+  owner: 
 --- !u!114 &1331475523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11819,6 +11900,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1964471249}
   - {fileID: 1720622960}
+  node_power: 0
+  owner: 
 --- !u!114 &1357937080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12043,6 +12126,8 @@ MonoBehaviour:
   - {fileID: 1220008567}
   - {fileID: 339470780}
   - {fileID: 1119259803}
+  node_power: 0
+  owner: 
 --- !u!114 &1358633927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14526,6 +14611,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1331475520}
   - {fileID: 1220008567}
+  node_power: 0
+  owner: 
 --- !u!114 &1650850050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14973,6 +15060,8 @@ MonoBehaviour:
   - {fileID: 875571975}
   - {fileID: 695824078}
   - {fileID: 1357937077}
+  node_power: 0
+  owner: 
 --- !u!114 &1720622963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15285,6 +15374,8 @@ MonoBehaviour:
   - {fileID: 1942893172}
   - {fileID: 725747707}
   - {fileID: 674636485}
+  node_power: 0
+  owner: 
 --- !u!114 &1758093315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16428,6 +16519,8 @@ MonoBehaviour:
   - {fileID: 1758093312}
   - {fileID: 678738253}
   - {fileID: 1119259803}
+  node_power: 0
+  owner: 
 --- !u!114 &1942893175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16787,6 +16880,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1357937077}
   - {fileID: 875571975}
+  node_power: 0
+  owner: 
 --- !u!114 &1964471252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17010,6 +17105,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 566040010}
   - {fileID: 1052218683}
+  node_power: 0
+  owner: 
 --- !u!114 &1976250519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18224,3 +18321,4 @@ SceneRoots:
   - {fileID: 1853788173}
   - {fileID: 2115781923}
   - {fileID: 1605280583}
+  - {fileID: 1127781336}
