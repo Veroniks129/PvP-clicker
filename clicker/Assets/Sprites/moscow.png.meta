@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      moscow_0: -1041955815237450736
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

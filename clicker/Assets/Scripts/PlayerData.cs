@@ -1,6 +1,7 @@
 using UnityEngine;
+using Unity.Netcode;
 
 public class Playerdata : MonoBehaviour
 {
-    public string current_team;
+    public Colors current_team;
 }
