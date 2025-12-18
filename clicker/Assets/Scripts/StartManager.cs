@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Net;
 using Unity.Netcode;
 using Unity.Services.Authentication;
@@ -6,9 +7,11 @@ using UnityEngine;
 
 public class StartManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject playerdataObj;
     public Playerdata playerdata;
+
+    public Dictionary<Colors, string> fullname_dict = new Dictionary<Colors, string>();
+    public Dictionary<Colors, string> shortname_dict = new Dictionary<Colors, string>();
 
     [SerializeField] private CanvasGroup game_map;
     [SerializeField] private GameObject game_paths;
@@ -20,7 +23,23 @@ public class StartManager : MonoBehaviour
     {
         StartMultiplayer();
         SetVisibilities();
+        InitNameDicts();
         playerdata = playerdataObj.GetComponent<Playerdata>();
+    }
+
+    void InitNameDicts()
+    {
+        fullname_dict.Add(Colors.Neutral, "Разрозненные региональные князья");
+        fullname_dict.Add(Colors.Red, "Второе народное ополчение Минина и Пожарского");
+        fullname_dict.Add(Colors.Blue, "Шведская интервенция за царя Шуйского");
+        fullname_dict.Add(Colors.Green, "Крестьянское восстание Болотникова");
+        fullname_dict.Add(Colors.Yellow, "Войско Лжедмитрия II при поддержке Речи Посполитой");
+
+        shortname_dict.Add(Colors.Neutral, "Нейтральные земли");
+        shortname_dict.Add(Colors.Red, "Минин и Пожарский");
+        shortname_dict.Add(Colors.Blue, "Шуйский");
+        shortname_dict.Add(Colors.Green, "Болотников");
+        shortname_dict.Add(Colors.Yellow, "Лжедмитрий II");
     }
 
     void SetVisibilities()

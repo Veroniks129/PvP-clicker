@@ -14,7 +14,8 @@ public class MenuLogic : NetworkBehaviour
     [SerializeField] private GameObject host_menu;
     [SerializeField] private GameObject common_menu;
 
-    [SerializeField] private CanvasGroup game_map;
+    [SerializeField] private CanvasGroup game_map_cg;
+    [SerializeField] private MapInit game_map_mi;
     [SerializeField] private GameObject game_paths;
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject map_blocker;
@@ -31,6 +32,7 @@ public class MenuLogic : NetworkBehaviour
         ClientMenuVisibility(false);
         _ = HostGame();
         HostMenuVisibility(true);
+        game_map_mi.InitializeMap();
     }
 
     public void SelectClient()
@@ -50,14 +52,13 @@ public class MenuLogic : NetworkBehaviour
         var session = await MultiplayerService.Instance.CreateSessionAsync(options);
         join_code_field.text = session.Code;
 
-        // NetworkManager.Singleton.StartHost();
+        NetworkManager.Singleton.StartHost();
     }
 
     async Task JoinGame(string join_code)
     {
         await MultiplayerService.Instance.JoinSessionByCodeAsync(join_code);
-
-        // NetworkManager.Singleton.StartClient();
+        NetworkManager.Singleton.StartClient();
     }
 
     void HostMenuVisibility(bool is_active)
@@ -79,10 +80,9 @@ public class MenuLogic : NetworkBehaviour
     [ClientRpc]
     void StartGameClientRpc()
     {
-        // game_map.SetActive(true);
-        game_map.alpha = 1;
-        game_map.blocksRaycasts = true;
-        game_map.interactable = true;
+        game_map_cg.alpha = 1;
+        game_map_cg.blocksRaycasts = true;
+        game_map_cg.interactable = true;
 
         map_blocker.SetActive(false);
         game_paths.SetActive(true);
