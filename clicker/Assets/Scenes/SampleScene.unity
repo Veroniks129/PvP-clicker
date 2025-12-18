@@ -9967,7 +9967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c270f1dba692a4ba8e4d978471b322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  current_team: 0
+  current_team: 1
 --- !u!114 &1127781338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16404,8 +16404,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1916885013}
-  - component: {fileID: 1916885012}
   - component: {fileID: 1916885011}
+  - component: {fileID: 1916885012}
   m_Layer: 0
   m_Name: Nodedata
   m_TagString: Untagged

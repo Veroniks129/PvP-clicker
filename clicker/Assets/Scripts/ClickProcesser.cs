@@ -49,6 +49,8 @@ public class ClickProcesser : NetworkBehaviour
         colorDict.Add(Colors.Neutral, Color.white);
         colorDict.Add(Colors.Red, Color.red);
         colorDict.Add(Colors.Blue, Color.blue);
+        colorDict.Add(Colors.Green, Color.green);
+        colorDict.Add(Colors.Yellow, Color.yellow);
     }
 
     // This function should be called when network vars changed on host and
@@ -72,38 +74,30 @@ public class ClickProcesser : NetworkBehaviour
     public void OnLocalClick()
     {
         // Just send click to host should be enough
-        HostClickHandlerRpc();
+        HostClickHandlerRpc(playerdata.current_team);
     }
 
     // Construction below says that we call function on the client (locally),
     // but execute it on the server (host)
     [Rpc(SendTo.Server, InvokePermission = RpcInvokePermission.Everyone)]
-    private void HostClickHandlerRpc()
+    private void HostClickHandlerRpc(Colors local_team)
     {
         string city = nodedata.GetName();
         Debug.Log($"Clicked on {city} : {nodedata.color.Value} color, {nodedata.power.Value} power");
-        bool is_any_neigh_my = nodedata.IsAnyNeighMy(playerdata.current_team);
-        bool is_my_color = (nodedata.color.Value == playerdata.current_team);
+        bool is_any_neigh_my = nodedata.IsAnyNeighMy(local_team);
+        bool is_my_color = (nodedata.color.Value == local_team);
         if (!is_any_neigh_my && !is_my_color)
         {
             Debug.Log("not nieghbor nor your city");
-            //if (playerdata.current_team == Colors.Red)
-            //{
-            //    playerdata.current_team = Colors.Blue;
-            //}
-            //else
-            //{
-            //    playerdata.current_team = Colors.Red;
-            //}
             return;
         }
         if (nodedata.power.Value == 0)
         {
             Debug.Log("its power = 0 => conquer it");
-            nodedata.color.Value = playerdata.current_team;
+            nodedata.color.Value = local_team;
             nodedata.power.Value++;
         }
-        else if (nodedata.color.Value == playerdata.current_team)
+        else if (nodedata.color.Value == local_team)
         {
             Debug.Log("its color the same as player's");
             nodedata.power.Value++;
