@@ -263,7 +263,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &19159400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,12 +308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 549078384}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &19159402
 MonoBehaviour:
@@ -1184,84 +1183,6 @@ RectTransform:
   m_AnchoredPosition: {x: -137.70001, y: 87.6}
   m_SizeDelta: {x: 166.09, y: 29.78}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &132063411
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 132063414}
-  - component: {fileID: 132063415}
-  - component: {fileID: 132063413}
-  m_Layer: 0
-  m_Name: TestButtonClickCounter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &132063413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132063411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9348d03603edc7c4c95a1455d010c9ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
-  external_example: {fileID: 0}
-  playerdataObj: {fileID: 0}
-  playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
-  nodedata: {fileID: 0}
---- !u!4 &132063414
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132063411}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 426.181, y: 202.78706, z: -0.86144805}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &132063415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132063411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2503108515
-  InScenePlacedSourceGlobalObjectIdHash: 0
-  DeferredDespawnTick: 0
-  Ownership: 1
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 0
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
 --- !u!1 &135257846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,7 +1550,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &217510486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1672,12 +1595,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 307277113}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &217510488
 MonoBehaviour:
@@ -2258,7 +2178,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &264617172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2301,12 +2223,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1984980847}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &264617174
 MonoBehaviour:
@@ -3023,7 +2942,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &339470783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3066,12 +2987,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1984190992}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &339470785
 MonoBehaviour:
@@ -3456,7 +3374,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &482462774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3499,12 +3419,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1359386877}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &482462776
 MonoBehaviour:
@@ -4424,7 +4341,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &566040013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4467,12 +4386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 490352669}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &566040015
 MonoBehaviour:
@@ -4743,7 +4659,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &595642806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4786,12 +4704,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1308241188}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &595642808
 MonoBehaviour:
@@ -5234,7 +5149,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &674636488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5277,12 +5194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 120895243}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &674636490
 MonoBehaviour:
@@ -5504,7 +5418,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &678738256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5547,12 +5463,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 2022983937}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &678738258
 MonoBehaviour:
@@ -5873,7 +5786,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &695824081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5916,12 +5831,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1324386569}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &695824083
 MonoBehaviour:
@@ -6464,7 +6376,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &725747710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6507,12 +6421,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 2110032743}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &725747712
 MonoBehaviour:
@@ -7480,7 +7391,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &875571978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7523,12 +7436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 710557838}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &875571980
 MonoBehaviour:
@@ -8382,7 +8292,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &946573843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8425,12 +8337,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 286214954}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &946573845
 MonoBehaviour:
@@ -9013,7 +8922,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1052218686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9056,12 +8967,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 2048823317}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1052218688
 MonoBehaviour:
@@ -9588,12 +9496,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1426357128}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1075273800
 MonoBehaviour:
@@ -9646,7 +9551,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!1 &1113336699
 GameObject:
   m_ObjectHideFlags: 0
@@ -9840,7 +9747,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1119259806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9883,12 +9792,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 741457231}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1119259808
 MonoBehaviour:
@@ -10061,9 +9967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c270f1dba692a4ba8e4d978471b322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  current_team:
-    m_InternalValue: neutral
+  current_team: 0
 --- !u!114 &1127781338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10642,7 +10546,7 @@ MonoBehaviour:
   m_DisconnectTimeoutMS: 30000
   ConnectionData:
     Address: 127.0.0.1
-    Port: 7777
+    Port: 7781
     ServerListenAddress: 127.0.0.1
   DebugSimulator:
     PacketDelayMS: 0
@@ -10852,7 +10756,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1220008570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10895,12 +10801,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1188941358}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1220008572
 MonoBehaviour:
@@ -11830,7 +11733,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1331475523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11873,12 +11778,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 927141351}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1331475525
 MonoBehaviour:
@@ -12062,7 +11964,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 1
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1357937080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12105,12 +12009,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 322639365}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1357937082
 MonoBehaviour:
@@ -12295,7 +12196,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1358633927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12338,12 +12241,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 552487120}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1358633929
 MonoBehaviour:
@@ -13760,217 +13660,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1527152513
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1527152515}
-  - component: {fileID: 1527152514}
-  - component: {fileID: 1527152516}
-  - component: {fileID: 1527152517}
-  - component: {fileID: 1527152519}
-  - component: {fileID: 1527152518}
-  m_Layer: 0
-  m_Name: SampleObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1527152514
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527152513}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6c5f5dd00cc98754d83605917b39b868, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1527152515
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527152513}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.2, y: 12.12, z: 0}
-  m_LocalScale: {x: 0.15007791, y: 0.15007791, z: 0.15007791}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1527152516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527152513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2891198637
-  InScenePlacedSourceGlobalObjectIdHash: 0
-  DeferredDespawnTick: 0
-  Ownership: 1
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 0
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
---- !u!114 &1527152517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527152513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9348d03603edc7c4c95a1455d010c9ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
-  external_example: {fileID: 0}
-  playerdataObj: {fileID: 0}
-  playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
-  nodedata: {fileID: 0}
---- !u!114 &1527152518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527152513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1527152517}
-          m_TargetAssemblyTypeName: ClickProcesser, Assembly-CSharp
-          m_MethodName: OnLocalClick
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!61 &1527152519
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527152513}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 19.2, y: 19.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 19.2, y: 19.2}
-  m_EdgeRadius: 0
 --- !u!1 &1540377011
 GameObject:
   m_ObjectHideFlags: 0
@@ -14791,7 +14480,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1650850050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14834,12 +14525,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 935109844}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1650850052
 MonoBehaviour:
@@ -15247,7 +14935,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1720622963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15290,12 +14980,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1569243914}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1720622965
 MonoBehaviour:
@@ -15568,7 +15255,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1758093315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15611,12 +15300,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 192476361}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1758093317
 MonoBehaviour:
@@ -16538,6 +16224,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1893280554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893280556}
+  - component: {fileID: 1893280555}
+  m_Layer: 0
+  m_Name: StartManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1893280555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893280554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7811d8afb9ecad74596701d297117966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerdataObj: {fileID: 1127781335}
+  playerdata: {fileID: 0}
+--- !u!4 &1893280556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893280554}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.942705, y: 7.0819883, z: 0.09666732}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900076872
 GameObject:
   m_ObjectHideFlags: 0
@@ -16723,7 +16455,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!4 &1916885013
 Transform:
   m_ObjectHideFlags: 0
@@ -16796,7 +16530,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1942893175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16839,12 +16575,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1071023123}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1942893177
 MonoBehaviour:
@@ -17164,7 +16897,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 2
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1964471252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17207,12 +16942,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 1789035647}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1964471254
 MonoBehaviour:
@@ -17396,7 +17128,9 @@ MonoBehaviour:
   power:
     m_InternalValue: 0
   color:
-    m_InternalValue: neutral
+    m_InternalValue: 0
+  minRandomValue: 5
+  maxRandomValue: 10
 --- !u!114 &1976250519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17439,12 +17173,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  var_example:
-    m_InternalValue: 0
   external_example: {fileID: 831093506}
-  playerdataObj: {fileID: 0}
+  playerdataObj: {fileID: 1127781335}
   playerdata: {fileID: 0}
-  nodedataObj: {fileID: 0}
   nodedata: {fileID: 0}
 --- !u!114 &1976250521
 MonoBehaviour:
@@ -18610,10 +18341,9 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1219754787}
   - {fileID: 1205983451}
-  - {fileID: 132063414}
-  - {fileID: 1527152515}
   - {fileID: 1853788173}
   - {fileID: 2115781923}
   - {fileID: 1605280583}
   - {fileID: 1127781336}
   - {fileID: 1916885013}
+  - {fileID: 1893280556}
