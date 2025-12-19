@@ -12,8 +12,8 @@ public class WinScoreManager : NetworkBehaviour
     [SerializeField] private GameObject winCanvas;
     [SerializeField] private StartManager dictsHolder;
 
-    private Playerdata playerdata;
-    private Nodedata MoscowNode;
+    [SerializeField] private Playerdata playerdata;
+    [SerializeField] private Nodedata MoscowNode;
     private Coroutine scoreCoroutine;
 
     void Start()
@@ -33,12 +33,6 @@ public class WinScoreManager : NetworkBehaviour
     private void Init()
     {
         StartManager sm = FindFirstObjectByType<StartManager>();
-        if (sm != null)
-            playerdata = sm.playerdata;
-
-        MapInit mapInit = FindFirstObjectByType<MapInit>();
-        if (mapInit != null)
-            MoscowNode = mapInit.test;
 
         if (playerdata == null) Debug.LogWarning("playerdata не найден!");
         if (MoscowNode == null) Debug.LogWarning("MoscowNode не найден!");
@@ -57,14 +51,12 @@ public class WinScoreManager : NetworkBehaviour
 
     void Update()
     {
-        // if (!IsOwner) return;
-
         if (playerdata == null || MoscowNode == null) return;
 
         // Проверяем контроль Москвы
         if (MoscowNode.color.Value == playerdata.current_team)
         {
-            if (scoreCoroutine == null)
+            if (scoreCoroutine == null && playerdata.current_team != Colors.Neutral)
                 scoreCoroutine = StartCoroutine(AwardScore());
         }
         else

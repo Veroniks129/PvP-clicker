@@ -13,6 +13,7 @@ public class Nodedata : NetworkBehaviour
         NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Server);
     public int minRandomValue = 5;
     public int maxRandomValue = 10;
+    public bool isLarge = false;
 
     //private void Awake()
     //{
