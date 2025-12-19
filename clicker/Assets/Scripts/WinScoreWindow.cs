@@ -51,7 +51,7 @@ public class WinScoreManager : NetworkBehaviour
 
     void Update()
     {
-        if (!IsOwner) return;
+        // if (!IsOwner) return;
 
         if (playerdata == null || MoscowNode == null) return;
 
@@ -90,9 +90,9 @@ public class WinScoreManager : NetworkBehaviour
             if (playerdata.win_score >= 5)
             {
                 Debug.Log("[WinScoreManager] Игрок достиг 100 очков! Игра завершена.");
-                
-                // Отправляем всем клиентам сообщение о завершении игры
-                EndGameClientRpc(playerdata.current_team);
+
+                // Завершение игры
+                EndGameServerRpc(playerdata.current_team);
 
                 yield break;
             }
@@ -115,6 +115,12 @@ public class WinScoreManager : NetworkBehaviour
 
         scoreText.text = $"{playerdata.win_score}";
         Debug.Log("UI обновлён локально: " + playerdata.win_score);
+    }
+
+    [Rpc(SendTo.Server, InvokePermission = RpcInvokePermission.Everyone)]
+    private void EndGameServerRpc(Colors winnerTeam)
+    {
+        EndGameClientRpc(winnerTeam);
     }
 
     [ClientRpc]
