@@ -18,6 +18,11 @@ public class MenuLogic : NetworkBehaviour
     [SerializeField] private GameObject choice_buttons;
     [SerializeField] private GameObject exit_button;
 
+    [SerializeField] private TeamButton red_team_button;
+    [SerializeField] private TeamButton green_team_button;
+    [SerializeField] private TeamButton blue_team_button;
+    [SerializeField] private TeamButton yellow_team_button;
+
     [SerializeField] private TMP_Text players_count_field;
     private NetworkVariable<int> players_count = new NetworkVariable<int>(0,
         NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Server);
@@ -48,6 +53,7 @@ public class MenuLogic : NetworkBehaviour
         ClientMenuVisibility(false);
         HostGame();
         HostMenuVisibility(true);
+        InitButtons();
         game_map_mi.InitializeMap();
     }
 
@@ -58,6 +64,7 @@ public class MenuLogic : NetworkBehaviour
         HostMenuVisibility(false);
         JoinGame(join_code_input.text);
         ClientMenuVisibility(true);
+        InitButtons();
     }
 
     public void SelectExit()
@@ -69,6 +76,14 @@ public class MenuLogic : NetworkBehaviour
         ChoiceMenuVisibility(true);
         join_code_field.text = "...wait...";
         players_count_field.text = "...wait...";
+    }
+
+    public void InitButtons()
+    {
+        red_team_button.Init(Colors.Red);
+        green_team_button.Init(Colors.Green);
+        blue_team_button.Init(Colors.Blue);
+        yellow_team_button.Init(Colors.Yellow);
     }
 
     async System.Threading.Tasks.Task HostGame()
@@ -173,7 +188,7 @@ public class MenuLogic : NetworkBehaviour
     private void OnClientDisconnectedLocal(ulong disconnected_id)
     {
         Debug.Log($"and so I am here: disc_id: {disconnected_id}, host_id.Value: {host_id.Value}, is_host: {is_host}");
-        if (!IsOwner && !NetworkManager.Singleton.IsConnectedClient || NetworkManager.Singleton.ShutdownInProgress))
+        if (!IsOwner && (!NetworkManager.Singleton.IsConnectedClient || NetworkManager.Singleton.ShutdownInProgress))
         {
             SelectExit();
         }

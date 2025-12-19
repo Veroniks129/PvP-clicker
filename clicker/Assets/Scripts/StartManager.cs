@@ -12,6 +12,7 @@ public class StartManager : MonoBehaviour
 
     public Dictionary<Colors, string> fullname_dict = new Dictionary<Colors, string>();
     public Dictionary<Colors, string> shortname_dict = new Dictionary<Colors, string>();
+    public Dictionary<Colors, Color> color_dict = new Dictionary<Colors, Color>();
 
     [SerializeField] private CanvasGroup game_map;
     [SerializeField] private GameObject game_paths;
@@ -23,11 +24,11 @@ public class StartManager : MonoBehaviour
     {
         StartMultiplayer();
         SetVisibilities();
-        InitNameDicts();
+        InitDicts();
         playerdata = playerdataObj.GetComponent<Playerdata>();
     }
 
-    void InitNameDicts()
+    void InitDicts()
     {
         fullname_dict.Add(Colors.Neutral, "Разрозненные региональные князья");
         fullname_dict.Add(Colors.Red, "Второе народное ополчение Минина и Пожарского");
@@ -40,6 +41,12 @@ public class StartManager : MonoBehaviour
         shortname_dict.Add(Colors.Blue, "Шуйский");
         shortname_dict.Add(Colors.Green, "Болотников");
         shortname_dict.Add(Colors.Yellow, "Лжедмитрий II");
+
+        color_dict.Add(Colors.Neutral, Color.white);
+        color_dict.Add(Colors.Red, Color.red);
+        color_dict.Add(Colors.Blue, Color.blue);
+        color_dict.Add(Colors.Green, Color.green);
+        color_dict.Add(Colors.Yellow, Color.yellow);
     }
 
     void SetVisibilities()
@@ -68,6 +75,7 @@ public class StartManager : MonoBehaviour
 // Update is called once per frame
 void Update()
     {
+        /*
         if (is_determined) return;
         if (NetworkManager.Singleton.IsHost)
         {
@@ -78,5 +86,6 @@ void Update()
             playerdata.current_team = Colors.Blue;
             is_determined = true;
         }
+        */
     }
 }
