@@ -20,6 +20,7 @@ public class MenuLogic : NetworkBehaviour
     [SerializeField] private GameObject common_menu;
     [SerializeField] private GameObject choice_buttons;
     [SerializeField] private GameObject exit_button;
+    [SerializeField] private WinScoreManager win_score_manager;
 
     [SerializeField] private TeamButton red_team_button;
     [SerializeField] private TeamButton green_team_button;
@@ -199,6 +200,8 @@ public class MenuLogic : NetworkBehaviour
         map_blocker.SetActive(false);
         game_paths.SetActive(true);
         menu.SetActive(false);
+
+        win_score_manager.Init();
     }
 
     public override void OnNetworkSpawn()

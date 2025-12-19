@@ -16,6 +16,9 @@ public class WinScoreManager : NetworkBehaviour
     [SerializeField] private Nodedata MoscowNode;
     private Coroutine scoreCoroutine;
 
+    private bool is_initialized = false;
+
+    /*
     void Start()
     {
         // Если объект ещё не спавнен, запланируем инициализацию на OnNetworkSpawn
@@ -29,8 +32,9 @@ public class WinScoreManager : NetworkBehaviour
     {
         Init();
     }
+    */
 
-    private void Init()
+    public void Init()
     {
         StartManager sm = FindFirstObjectByType<StartManager>();
 
@@ -46,11 +50,15 @@ public class WinScoreManager : NetworkBehaviour
         UpdateText();
 
         UpdateText();
+
+        is_initialized = true;
     }
 
 
     void Update()
     {
+        if (!is_initialized) return;
+
         if (playerdata == null || MoscowNode == null) return;
 
         // Проверяем контроль Москвы

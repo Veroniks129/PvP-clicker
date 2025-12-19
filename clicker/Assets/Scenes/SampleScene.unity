@@ -9221,19 +9221,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809107000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -109.02154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1309831762}
-  m_Father: {fileID: 1605280583}
+  m_Father: {fileID: 2115781923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 484.48007, y: 272.55383}
+  m_SizeDelta: {x: 968.96, y: 545.1077}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809107006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9261,7 +9261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809107000}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
@@ -17762,7 +17762,6 @@ Transform:
   - {fileID: 1915250189}
   - {fileID: 1373620927}
   - {fileID: 1181024662}
-  - {fileID: 809107004}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1611235078
@@ -22110,6 +22109,7 @@ MonoBehaviour:
   common_menu: {fileID: 35111936}
   choice_buttons: {fileID: 553117105}
   exit_button: {fileID: 1246606073}
+  win_score_manager: {fileID: 809107006}
   red_team_button: {fileID: 796582822}
   green_team_button: {fileID: 1536614291}
   blue_team_button: {fileID: 1884491550}
@@ -23532,6 +23532,7 @@ RectTransform:
   - {fileID: 797800261}
   - {fileID: 448311413}
   - {fileID: 1540377012}
+  - {fileID: 809107004}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
