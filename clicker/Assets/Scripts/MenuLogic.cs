@@ -37,6 +37,7 @@ public class MenuLogic : NetworkBehaviour
     [SerializeField] private GameObject game_paths;
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject map_blocker;
+    [SerializeField] private GameObject win_canvas;
 
     private NetworkVariable<int> red_count = new NetworkVariable<int>(0,
         NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Server);
@@ -52,6 +53,7 @@ public class MenuLogic : NetworkBehaviour
         ChoiceMenuVisibility(true);
         HostMenuVisibility(false);
         ClientMenuVisibility(false);
+        win_canvas.SetActive(false);
     }
 
     public void SelectHost()
@@ -161,7 +163,6 @@ public class MenuLogic : NetworkBehaviour
     private void Update()
     {
         if (!IsServer) return;
-        Debug.Log("update");
         start_button.interactable = ValidatePlayerColors();
     }
 
@@ -177,11 +178,9 @@ public class MenuLogic : NetworkBehaviour
 
             if (team_buttons_dict[color].is_occupied.Value)
             {
-                Debug.Log($"VALIDATE | color: {color}, count: {count}, pc: {players_count.Value}");
                 count++;
             }
         }
-        Debug.Log($"VALIDATE | count: {count}, pc: {players_count.Value}");
         return count == players_count.Value;
     }
 

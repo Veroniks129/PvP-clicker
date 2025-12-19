@@ -1,11 +1,17 @@
 using System.Collections;
 using TMPro;
-using UnityEngine;
 using Unity.Netcode;
+using Unity.VisualScripting;
+using UnityEngine;
 
 public class WinScoreManager : NetworkBehaviour
 {
     [SerializeField] private TMP_Text scoreText; // UI очков
+    [SerializeField] private GameObject mapBlocker;
+    [SerializeField] private TMP_Text winnerText;
+    [SerializeField] private GameObject winCanvas;
+    [SerializeField] private StartManager dictsHolder;
+
     private Playerdata playerdata;
     private Nodedata MoscowNode;
     private Coroutine scoreCoroutine;
@@ -129,6 +135,11 @@ public class WinScoreManager : NetworkBehaviour
         // Можно заблокировать UI карты и показать экран победы
         if (scoreText != null)
             scoreText.text = $"Команда {winnerTeam} победила!";
+
+        mapBlocker.SetActive(true);
+        winCanvas.SetActive(true);
+        winnerText.text = dictsHolder.fullname_dict[winnerTeam];
+        winnerText.color = dictsHolder.color_dict[winnerTeam];
 
         // Дополнительно можно заблокировать дальнейшие действия
         if (scoreCoroutine != null)

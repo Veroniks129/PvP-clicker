@@ -30,17 +30,17 @@ public class StartManager : MonoBehaviour
 
     void InitDicts()
     {
-        fullname_dict.Add(Colors.Neutral, "������������ ������������ ������");
-        fullname_dict.Add(Colors.Red, "������ �������� ��������� ������ � ����������");
-        fullname_dict.Add(Colors.Blue, "�������� ����������� �� ���� ��������");
-        fullname_dict.Add(Colors.Green, "������������ ��������� �����������");
-        fullname_dict.Add(Colors.Yellow, "������ ���������� II ��� ��������� ���� ����������");
+        fullname_dict.Add(Colors.Neutral, "Разрозненные региональные князья");
+        fullname_dict.Add(Colors.Red, "Второе народное ополчение Минина и Пожарского");
+        fullname_dict.Add(Colors.Blue, "Шведская интервенция за царя Шуйского");
+        fullname_dict.Add(Colors.Green, "Крестьянское восстание Болотникова");
+        fullname_dict.Add(Colors.Yellow, "Войско Лжедмитрия II при поддержке Речи Посполитой");
 
-        shortname_dict.Add(Colors.Neutral, "����������� �����");
-        shortname_dict.Add(Colors.Red, "����� � ���������");
-        shortname_dict.Add(Colors.Blue, "�������");
-        shortname_dict.Add(Colors.Green, "����������");
-        shortname_dict.Add(Colors.Yellow, "���������� II");
+        shortname_dict.Add(Colors.Neutral, "Нейтральные земли");
+        shortname_dict.Add(Colors.Red, "Минин и Пожарский");
+        shortname_dict.Add(Colors.Blue, "Шуйский");
+        shortname_dict.Add(Colors.Green, "Болотников");
+        shortname_dict.Add(Colors.Yellow, "Лжедмитрий II");
 
         color_dict.Add(Colors.Neutral, Color.white);
         color_dict.Add(Colors.Red, Color.red);
