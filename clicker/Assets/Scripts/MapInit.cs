@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MapInit : MonoBehaviour
 {
-    [SerializeField] Nodedata test;
+    [SerializeField] public Nodedata test;
 
     public void InitializeMap()
     {

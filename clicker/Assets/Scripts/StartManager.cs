@@ -29,17 +29,17 @@ public class StartManager : MonoBehaviour
 
     void InitNameDicts()
     {
-        fullname_dict.Add(Colors.Neutral, "Разрозненные региональные князья");
-        fullname_dict.Add(Colors.Red, "Второе народное ополчение Минина и Пожарского");
-        fullname_dict.Add(Colors.Blue, "Шведская интервенция за царя Шуйского");
-        fullname_dict.Add(Colors.Green, "Крестьянское восстание Болотникова");
-        fullname_dict.Add(Colors.Yellow, "Войско Лжедмитрия II при поддержке Речи Посполитой");
+        fullname_dict.Add(Colors.Neutral, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ");
+        fullname_dict.Add(Colors.Red, "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+        fullname_dict.Add(Colors.Blue, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+        fullname_dict.Add(Colors.Green, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+        fullname_dict.Add(Colors.Yellow, "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ II пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 
-        shortname_dict.Add(Colors.Neutral, "Нейтральные земли");
-        shortname_dict.Add(Colors.Red, "Минин и Пожарский");
-        shortname_dict.Add(Colors.Blue, "Шуйский");
-        shortname_dict.Add(Colors.Green, "Болотников");
-        shortname_dict.Add(Colors.Yellow, "Лжедмитрий II");
+        shortname_dict.Add(Colors.Neutral, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
+        shortname_dict.Add(Colors.Red, "пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+        shortname_dict.Add(Colors.Blue, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+        shortname_dict.Add(Colors.Green, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+        shortname_dict.Add(Colors.Yellow, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ II");
     }
 
     void SetVisibilities()
