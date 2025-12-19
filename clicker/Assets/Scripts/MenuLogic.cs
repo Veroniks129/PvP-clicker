@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Threading.Tasks;
 using TMPro;
 using Unity.Collections.LowLevel.Unsafe;
@@ -8,6 +10,7 @@ using Unity.Services.Core;
 using Unity.Services.Multiplayer;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuLogic : NetworkBehaviour
 {
@@ -22,6 +25,8 @@ public class MenuLogic : NetworkBehaviour
     [SerializeField] private TeamButton green_team_button;
     [SerializeField] private TeamButton blue_team_button;
     [SerializeField] private TeamButton yellow_team_button;
+    public Dictionary<Colors, TeamButton> team_buttons_dict = new Dictionary<Colors, TeamButton>();
+    [SerializeField] private Button start_button;
 
     [SerializeField] private TMP_Text players_count_field;
     private NetworkVariable<int> players_count = new NetworkVariable<int>(0,
@@ -33,8 +38,11 @@ public class MenuLogic : NetworkBehaviour
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject map_blocker;
 
+    private NetworkVariable<int> red_count = new NetworkVariable<int>(0,
+        NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Server);
+
     private ISession session;
-    bool is_host;
+    private bool is_host;
     private NetworkVariable<ulong> host_id = new NetworkVariable<ulong>(0,
         NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Server);
 
@@ -69,7 +77,6 @@ public class MenuLogic : NetworkBehaviour
 
     public void SelectExit()
     {
-        Debug.Log($"Selected Exit");
         HostMenuVisibility(false);
         ClientMenuVisibility(false);
         ExitGame();
@@ -84,6 +91,22 @@ public class MenuLogic : NetworkBehaviour
         green_team_button.Init(Colors.Green);
         blue_team_button.Init(Colors.Blue);
         yellow_team_button.Init(Colors.Yellow);
+        team_buttons_dict[Colors.Red] = red_team_button;
+        team_buttons_dict[Colors.Green] = green_team_button;
+        team_buttons_dict[Colors.Blue] = blue_team_button;
+        team_buttons_dict[Colors.Yellow] = yellow_team_button;
+
+        foreach (Colors color in (Colors[])Enum.GetValues(typeof(Colors)))
+        {
+            if (color == Colors.Neutral)
+            {
+                continue;
+            }
+            team_buttons_dict[color].Init(color);
+            team_buttons_dict[color].button.interactable = false;
+        }
+
+        start_button.interactable = false;
     }
 
     async System.Threading.Tasks.Task HostGame()
@@ -134,7 +157,34 @@ public class MenuLogic : NetworkBehaviour
         choice_buttons.SetActive(is_active);
         exit_button.SetActive(!is_active);
     }
-    
+
+    private void Update()
+    {
+        if (!IsServer) return;
+        Debug.Log("update");
+        start_button.interactable = ValidatePlayerColors();
+    }
+
+    private bool ValidatePlayerColors()
+    {
+        int count = 0;
+        foreach (Colors color in (Colors[])Enum.GetValues(typeof(Colors)))
+        {
+            if (color == Colors.Neutral)
+            {
+                continue;
+            }
+
+            if (team_buttons_dict[color].is_occupied.Value)
+            {
+                Debug.Log($"VALIDATE | color: {color}, count: {count}, pc: {players_count.Value}");
+                count++;
+            }
+        }
+        Debug.Log($"VALIDATE | count: {count}, pc: {players_count.Value}");
+        return count == players_count.Value;
+    }
+
     public void TriggerStart()
     {
         StartGameClientRpc();
@@ -179,15 +229,28 @@ public class MenuLogic : NetworkBehaviour
         host_id.Value = NetworkManager.Singleton.LocalClientId;
     }
 
-    private void OnClientDisconnectedHost(ulong _)
+    private void OnClientDisconnectedHost(ulong client_id)
     {
         players_count.Value = NetworkManager.Singleton.ConnectedClients.Count;
+
+        foreach (Colors color in (Colors[])Enum.GetValues(typeof(Colors)))
+        {
+            if (color == Colors.Neutral)
+            {
+                continue;
+            }
+
+            if (team_buttons_dict[color].occupied_by.Value == client_id)
+            {
+                team_buttons_dict[color].is_occupied.Value = false;
+                team_buttons_dict[color].occupied_by.Value = 999;
+            }
+        }
     }
     
     // Тут должен был быть выход клиента при выходе хоста, но мне никак не удалось заставить его работать
     private void OnClientDisconnectedLocal(ulong disconnected_id)
     {
-        Debug.Log($"and so I am here: disc_id: {disconnected_id}, host_id.Value: {host_id.Value}, is_host: {is_host}");
         if (!IsOwner && (!NetworkManager.Singleton.IsConnectedClient || NetworkManager.Singleton.ShutdownInProgress))
         {
             SelectExit();

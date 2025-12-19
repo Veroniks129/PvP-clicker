@@ -8556,6 +8556,7 @@ GameObject:
   - component: {fileID: 796582821}
   - component: {fileID: 796582820}
   - component: {fileID: 796582819}
+  - component: {fileID: 796582823}
   - component: {fileID: 796582822}
   m_Layer: 5
   m_Name: Red
@@ -8678,12 +8679,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a75e730b0fcc84694de9939341ac09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   button_color: 0
   dicts_holder: {fileID: 1893280555}
   player_data: {fileID: 1127781337}
   team_text: {fileID: 1536422571}
   panel: {fileID: 1898526747}
   button: {fileID: 796582819}
+  team_buttons_dict_holder: {fileID: 1984122285}
+  is_occupied:
+    m_InternalValue: 0
+  occupied_by:
+    m_InternalValue: 0
+--- !u!114 &796582823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796582817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 416570758
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &797800260
 GameObject:
   m_ObjectHideFlags: 0
@@ -11654,7 +11686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c270f1dba692a4ba8e4d978471b322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  current_team: 1
+  current_team: 0
 --- !u!114 &1127781338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16317,6 +16349,7 @@ GameObject:
   - component: {fileID: 1536614290}
   - component: {fileID: 1536614289}
   - component: {fileID: 1536614288}
+  - component: {fileID: 1536614292}
   - component: {fileID: 1536614291}
   m_Layer: 5
   m_Name: Green
@@ -16439,12 +16472,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a75e730b0fcc84694de9939341ac09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   button_color: 0
   dicts_holder: {fileID: 1893280555}
   player_data: {fileID: 1127781337}
   team_text: {fileID: 1536422571}
   panel: {fileID: 1898526747}
   button: {fileID: 1536614288}
+  team_buttons_dict_holder: {fileID: 1984122285}
+  is_occupied:
+    m_InternalValue: 0
+  occupied_by:
+    m_InternalValue: 0
+--- !u!114 &1536614292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536614286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 154128110
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &1540377011
 GameObject:
   m_ObjectHideFlags: 0
@@ -19398,6 +19462,7 @@ GameObject:
   - component: {fileID: 1884491549}
   - component: {fileID: 1884491548}
   - component: {fileID: 1884491547}
+  - component: {fileID: 1884491551}
   - component: {fileID: 1884491550}
   m_Layer: 5
   m_Name: Blue
@@ -19520,12 +19585,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a75e730b0fcc84694de9939341ac09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   button_color: 0
   dicts_holder: {fileID: 1893280555}
   player_data: {fileID: 1127781337}
   team_text: {fileID: 1536422571}
   panel: {fileID: 1898526747}
   button: {fileID: 1884491547}
+  team_buttons_dict_holder: {fileID: 1984122285}
+  is_occupied:
+    m_InternalValue: 0
+  occupied_by:
+    m_InternalValue: 0
+--- !u!114 &1884491551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884491545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1494636310
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &1893280554
 GameObject:
   m_ObjectHideFlags: 0
@@ -21174,6 +21270,7 @@ MonoBehaviour:
   green_team_button: {fileID: 1536614291}
   blue_team_button: {fileID: 1884491550}
   yellow_team_button: {fileID: 2120262751}
+  start_button: {fileID: 438376427}
   players_count_field: {fileID: 270989907}
   game_map_cg: {fileID: 2115781924}
   game_map_mi: {fileID: 2115781925}
@@ -22634,6 +22731,7 @@ GameObject:
   - component: {fileID: 2120262750}
   - component: {fileID: 2120262749}
   - component: {fileID: 2120262748}
+  - component: {fileID: 2120262752}
   - component: {fileID: 2120262751}
   m_Layer: 5
   m_Name: Yellow
@@ -22756,12 +22854,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a75e730b0fcc84694de9939341ac09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   button_color: 0
   dicts_holder: {fileID: 1893280555}
   player_data: {fileID: 1127781337}
   team_text: {fileID: 1536422571}
   panel: {fileID: 1898526747}
   button: {fileID: 2120262748}
+  team_buttons_dict_holder: {fileID: 1984122285}
+  is_occupied:
+    m_InternalValue: 0
+  occupied_by:
+    m_InternalValue: 0
+--- !u!114 &2120262752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120262746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 3650026990
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
